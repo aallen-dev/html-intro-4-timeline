@@ -864,6 +864,8 @@ body {
 
 .all-container > :nth-child(2n) > .entry-content {
   background-color: #aaf; }
+.all-container > :nth-child(2n) > .entry-content:before {
+  border-color: transparent #aaf transparent transparent; }
 .all-container > :nth-child(2n) > .entry-meta > .entry-date :last-child {
   font-size: 18px;
   color: #aaf; }
@@ -872,7 +874,7 @@ body {
   overflow: hidden; }
   .all-container section .entry-meta {
     float: left;
-    width: 145px; }
+    width: 140px; }
     .all-container section .entry-meta span {
       position: relative;
       float: right;
@@ -922,6 +924,17 @@ body {
   .all-container section .entry-content:after {
     content: "";
     clear: both; }
+  .all-container section .entry-content:before {
+    margin-left: 150px;
+    content: "";
+    left: -20px;
+    top: 10px;
+    border: 10px solid;
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-color: transparent blue transparent transparent; }
   .all-container section h1 {
     color: white; }
 

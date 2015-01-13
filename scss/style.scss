@@ -66,6 +66,9 @@ body {
             background-color:#aaf;
 
         }
+        & > .entry-content:before{
+            border-color:transparent #aaf transparent transparent;
+        }
         & > .entry-meta{
             & > .entry-date {
                 & :last-child{
@@ -84,7 +87,7 @@ body {
         }
         .entry-meta{
             float:left;
-            width:145px;
+            width:140px;
             span {
                 // display:inline;
                 position:relative;
@@ -144,6 +147,18 @@ body {
         .entry-content:after{
             content: "";
             clear:both;
+        }
+        .entry-content:before{
+            margin-left: 150px;
+            content:"";
+            left:-20px;
+            top:10px;
+            border:10px solid;
+            display:inline-block;
+            position:absolute;
+            width:10px;
+            height:10px;
+            border-color:transparent blue transparent transparent;
         }
         h1{
             color:white;
