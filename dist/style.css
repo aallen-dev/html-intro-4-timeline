@@ -946,6 +946,8 @@ body {
     display: block; } }
 
 @media (max-width: 600px) {
+  .entry-content:before {
+    border-color: transparent !important; }
   .all-container > .entry-container > * {
     margin-left: 20px !important;
     clear: both; }
